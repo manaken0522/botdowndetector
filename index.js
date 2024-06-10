@@ -22,7 +22,7 @@ client.on(discord.Events.PresenceUpdate, (oldPresence, newPresence) => {
                         const alert_channel = client.channels.cache.find(channel => channel.id == config.alert_channel);
                         alert_channel.send(`${newPresence.user.username}がダウンしています`);
                     }
-                }, 10*1000);
+                }, 300*1000);
             }
         }
         else {
